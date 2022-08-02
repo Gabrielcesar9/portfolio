@@ -1,0 +1,264 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.1/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-F3w7mX95PdgyTmZZMECAngseQB83DfGTowi0iMjiWaeVhAn4FJkqJByhZMI3AhiU" crossorigin="anonymous">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.3.0/font/bootstrap-icons.css">
+    <link href='https://api.mapbox.com/mapbox-gl-js/v2.3.1/mapbox-gl.css' rel='stylesheet' />
+    <link rel="stylesheet" href="style.css">
+    <title>Gabriel César Pereira</title>
+</head>
+<script>
+    function hover(element, swit){
+        element.setAttribute('src', `./${swit}`)
+        element.style.width = '30%'
+        element.style.margin = '0'
+    }
+    function unhover(element, swit){
+        element.setAttribute('src', `./${swit}`)
+        element.style.width = '25%'
+        element.style.margin = '10px 30px 10px 30px'
+    }
+</script>
+
+<body class="bg-info bg-gradient">
+    <nav class="navbar navbar-expand-lg bg-info bg-gradient navbar-light py-3 fixed-top">
+        <div class="container">
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navmenu">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse" id="navmenu">
+                <ul class="navbar-nav ms-auto">
+                    <li class="nav-item">
+                        <a href="#navmenu" class="nav-link">About me</a>
+                    </li>
+                    <li class="nav-item">
+                        <a href="#skills" class="nav-link">Skills</a>
+                    </li>
+                    <li class="nav-item">
+                        <a href="#academic" class="nav-link">Academic</a>
+                    </li>
+                    <li class="nav-item">
+                        <a href="#recent-projects" class="nav-link">Recent Projects</a>
+                    </li>
+                    <li class="nav-item">
+                        <a href="#more-about-me" class="nav-link">More</a>
+                    </li>
+                </ul><a href="./index_pt.html"><img class="ico" style="margin-left:25px;" src="/src/br_ico.png"></a>
+            </div>
+        </div> 
+        
+    </nav>
+
+    <section class="bg-info bg-gradient text-dark p-5 p-lg-0 pt-lg-5 text-center text-sm-start">
+        <div class="container">
+            <div class="d-sm-flex align-items-center justify-content-between">
+                <div>
+                    <h1 class="display-3">Full-stack Developer <br> <span class="text-warning">&</span><br> Data Analyst</h1>
+                    <p class="lead my-3 display-6">Passionate about redesigning the world through software and describing it through data
+                    </p>
+                    
+                </div>
+                <img class="img-fluid w-50 d-none d-sm-block" src="./src/Profile_.png" alt=""/>
+            </div>
+        </div>
+    </section>
+
+
+    <!-- Boxes -->
+    <section class="p-5">
+        <div class="container" id="skills">
+            <div class="row text-center">
+                <div class="col-md">
+                    <div class="card bg-info bg-gradient text-light">
+                        <h2 style="margin-bottom:20px;">Front-end</h2>
+                        <div class="col-md">
+                            <a href="https://developer.mozilla.org/en-US/docs/Web/HTML" target="_blank"><img class="rounded float-left"   src="./src/front-end/html.png" onmouseover="hover(this,'./src/front-end/html_.png')" onmouseout="unhover(this,'./src/front-end/html.png')"></a>
+                            <a href="https://developer.mozilla.org/en-US/docs/Web/CSS" target="_blank"><img class="rounded float-right"  src="./src/front-end/css.png" onmouseover="hover(this,'./src/front-end/css_.png')" onmouseout="unhover(this,'./src/front-end/css.png')"></a>
+                        </div>
+                        <a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript" target="_blank"><img class="rounded mx-auto d-block"  src="./src/front-end/javascript.png" onmouseover="hover(this,'./src/front-end/javascript_.png')" onmouseout="unhover(this,'./src/front-end/javascript.png')"></a>
+                        <div class="col-md">
+                            <a href="https://getbootstrap.com/" target="_blank"><img class="rounded float-left"  src="./src/front-end/bootstrap.png" onmouseover="hover(this,'./src/front-end/bootstrap_.png')" onmouseout="unhover(this,'./src/front-end/bootstrap.png')"></a>
+                            <a href="https://reactjs.org/" target="_blank"><img class="rounded float-right"  src="./src/front-end/react.png" onmouseover="hover(this,'./src/front-end/react_.png')" onmouseout="unhover(this,'./src/front-end/react.png')"></a>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-md" style="border: 0px ;">
+                   <div class="card bg-info bg-gradient text-light">
+                        <h2 style="margin-bottom:60px;">Back-end</h2>
+                        <div class="col-md">
+                            <a href="https://nodejs.org/en/" target="_blank"><img class="rounded float-left"   src="./src/back-end/node.png" onmouseover="hover(this,'./src/back-end/node_.png')" onmouseout="unhover(this,'./src/back-end/node.png')"></a>
+                            <a href="https://www.mongodb.com/" target="_blank"><img class="rounded float-right"  src="./src/back-end/mongo.png" onmouseover="hover(this,'./src/back-end/mongo_.png')" onmouseout="unhover(this,'./src/back-end/mongo.png')"></a>
+                        </div>
+                         
+                        <div class="col-md">
+                            <a href="https://www.python.org/" target="_blank"><img class="rounded float-left"  src="./src/back-end/python.png" onmouseover="hover(this,'./src/back-end/python_.png')" onmouseout="unhover(this,'./src/back-end/python.png')"></a>
+                            <a href="https://nextjs.org/" target="_blank"><img class="rounded float-right"  src="./src/back-end/next.png" onmouseover="hover(this,'./src/back-end/next_.png')" onmouseout="unhover(this,'./src/back-end/next.png')"></a>
+                        </div>
+                        <a target="_blank"><img class="rounded float-left" style="width:20.5%; margin: 0; visibility: hidden;" src="./src/back-end/python_.png"></a>
+                    </div>
+                </div>
+                    
+                <div class="col-md">
+                    <div class="card bg-info bg-gradient text-light">
+                        <h2 style="margin-bottom:20px;">Data Analysis</h2>
+                        <div class="col-md">
+                            <a href="https://scikit-learn.org/stable/" target="_blank"><img class="rounded float-left"   src="./src/data-analysis/sklearn.png" onmouseover="hover(this,'./src/data-analysis/sklearn_.png')" onmouseout="unhover(this,'./src/data-analysis/sklearn.png')"></a>
+                            <a href="https://matplotlib.org/" target="_blank"><img class="rounded float-right"  src="./src/data-analysis/matplot.png" onmouseover="hover(this,'./src/data-analysis/matplot_.png')" onmouseout="unhover(this,'./src/data-analysis/matplot.png')"></a>
+                        </div>
+                        <a href="https://www.tensorflow.org/" target="_blank"><img class="rounded mx-auto d-block"  src="./src/data-analysis/tensor.png" onmouseover="hover(this,'./src/data-analysis/tensor_.png')" onmouseout="unhover(this,'./src/data-analysis/tensor.png')"></a>
+                        <div class="col-md">
+                            <a href="https://www.chartjs.org/" target="_blank"><img class="rounded float-left"  src="./src/data-analysis/chartjs.png" onmouseover="hover(this,'./src/data-analysis/chartjs_.png')" onmouseout="unhover(this,'./src/data-analysis/chartjs.png')"></a>
+                            <a href="https://www.tableau.com/" target="_blank"><img class="rounded float-right"  src="./src/data-analysis/tableau.png" onmouseover="hover(this,'./src/data-analysis/tableau_.png')" onmouseout="unhover(this,'./src/data-analysis/tableau.png')"></a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Learn Sections -->
+
+    <section id="learn" class="p-5 bg-info bg-gradient">
+        <div class="container" id="academic">
+            <div class="row align-items-center justify-content-between">
+                <div class="col-md" style="text-align: right;">
+                    <img style="width: 50%;" src="./src/projects/neural.png" class="img-fluid" alt="">
+                </div>
+                
+                <div class="col-md p-5">
+                    <h2>Academic Research</h2>
+                        <p class="lead">
+                            At University I research Machine Learning Models for predicting physical properties of atoms and molecules
+                        </p>
+                        <p>Some of the algorithms and tools that I use during research include: <a>Neural Networks</a>, <a>Support Vector Machines</a>, and <a>Principal Component Analysis</a> (PCA) for dimensionality reduction
+                        </p>
+                        <a href="http://lattes.cnpq.br/9767206332813047" class="btn btn-light mt-3" target="_blank"><i class="bi bi-chevron-right"></i>Read More</a>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section id="instructors" class="p-5 bg-info bg-gradient">
+        <div class="container" id="recent-projects">
+            <h2 class="text-center text-white">Recent Projects</h2>
+            <p class="lead text-center text-white mb-5"> </p>
+            <div class="row g-4">
+                <div class="col-md-6 col-lg-3">
+                    <div class="card bg-light">
+                        <div class="card-body text-center">
+                            <img src="./src/projects/prostandings.png" class="rounded-circle mb-3" alt="">
+                            <h3 class="card-titile mb-3">Pro Standings</h3>
+                            <p class="card-text">A <a href="https://en.wikipedia.org/wiki/Glicko_rating_system">glicko-2</a> based tool for evaluating team ratings and predicting matches outcomes in competitive League of Legends matches around the world</p>
+                            <b>React-Bootstrap-Chart.JS</b>
+                            <i style="font-size:xxx-large"></i>
+                            <a href="https://github.com/Gabrielcesar9/ProStandings" target="_blank"><i class="bi bi-github text-dark"></i></a>
+                            <a href="https://pro-standings.vercel.app/" target="_blank"><i class="bi bi-arrow-right-square-fill text-dark"></i></a>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-md-6 col-lg-3">
+                    <div class="card bg-light">
+                        <div class="card-body text-center">
+                            <img src="./src/projects/ielts.png" class="rounded-circle mb-3" alt="">
+                            <h3 class="card-titile mb-3">IELTS Online</h3>
+                            <p class="card-text">A web based IELTS mock test. The responses are persisted in an online spreadsheet through the <a href="https://developers.google.com/sheets/api">Google Spreadhsheet API</a></p>
+                            <b>React-Redux-Google API</b>
+                            <i style="font-size:xxx-large"></i>
+                            <a href="https://github.com/Gabrielcesar9/IELTS" target="_blank"><i class="bi bi-github text-dark"></i></a>
+                            <a href="https://ielts-gabrielcesar9.vercel.app/" target="_blank"><i class="bi bi-arrow-right-square-fill text-dark"></i></a>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-md-6 col-lg-3">
+                    <div class="card bg-light">
+                        <div class="card-body text-center">
+                            <img src="./src/projects/dft.png" class="rounded-circle mb-3" alt="">
+                            <h3 class="card-titile mb-3">Atomic DFT data</h3>
+                            <p class="card-text">A database of atomic Density Functional Theory energies for the representative elements of the periodic table</p>
+                            <b>React-Next.js-MongoDB</b>&nbsp;
+                            <i style="font-size:xxx-large"></i>
+                            <a href="https://github.com/Gabrielcesar9/atomicdata" target="_blank"><i class="bi bi-github text-dark"></i></a>&nbsp;
+                            <a href="https://atomicdata.vercel.app/" target="_blank"><i class="bi bi-arrow-right-square-fill text-dark"></i></a>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-md-6 col-lg-3">
+                    <div class="card bg-light">
+                        <div class="card-body text-center">
+                            <img src="./src/projects/fyl.png" class="rounded-circle mb-3" alt="">
+                            <h3 class="card-titile mb-3">Find Your Lesson</h3>
+                            <p class="card-text">A website containing ready-to use English lessons designed for conversation classes and reading/speaking practice</p>
+                            <b>HTML-CSS-JS-Netlify</b>
+                            <i style="font-size:xxx-large"></i>
+                            <a href="https://github.com/Gabrielcesar9/FYL"><i class="bi bi-github text-dark"></i></a>
+                            <a href="https://findyourlesson.netlify.app/index.html"><i class="bi bi-arrow-right-square-fill text-dark"></i></a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+<section id="more-about-me" class="p-5 bg-secondary text-light">
+<div class="container" id="more-about-me">
+    <div class="row align-items-center justify-content-between"> 
+        <div class="col-md p-5">
+            <h2>More about me</h2>
+                <p class="lead">
+                    I am a 26 years old code lover based in Campinas/SP. I am bringing criativity and scientific rigor to problem solving through software.
+                </p>
+                <p>Coding has become the combination of two of the things I most love: solving problems and creating value for others. My curiosity has been taking me through all corners of software development, from back-end to front-end and everything in between.
+                </p>
+                
+        </div>
+        <div class="col-md">
+            <img style="width:40%" src="./src/projects/south_me.png" class="img-fluid" alt="">
+        </div>
+    </div>
+</div>
+</section>
+    <!-- ontact & Map -->
+    <section class="p-5 bg-light">
+        <div class="container">
+            <div class="row g-4">
+                <div class="col-md">
+                    <h2 class="text-cemter mb-4">Contact Info</h2>
+                    <ul class="list-group list-group-flush lead">
+                        <li class="list-group-item">
+                            <span class="fw-bold">Main Location:</span> Barão Geraldo/Campinas-SP
+                        </li>
+                        <li class="list-group-item">
+                            <span class="fw-bold">Phone:</span> (82) 994279454
+                        </li>
+                        <li class="list-group-item">
+                            <span class="fw-bold">E-mail:</span> gabriel.cesar.pereira.9@gmail.com
+                        </li>
+                    </ul>
+                </div>
+                <div class="col-md">
+                    <div id="map"></div>
+                </div>
+            </div>
+        </div>
+    </section>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.1/dist/js/bootstrap.bundle.min.js" integrity="sha384-/bQdsTh/da6pkI1MST/rWKFNjaCP5gBSY4sEBT38Q/9RBh9AH40zEOg7Hlq2THRZ" crossorigin="anonymous"></script>
+    <script src='https://api.mapbox.com/mapbox-gl-js/v2.3.1/mapbox-gl.js'></script>
+    <script>
+        mapboxgl.accessToken = 'pk.eyJ1IjoiZ2FicmllbGNlc2FyOSIsImEiOiJja3UyemF5cW0wdjBuMzBxaGV4MmZ5ZzUzIn0.GNUJhZlGShHesCJI-coGrg';
+        var map = new mapboxgl.Map({
+        container: 'map',
+        style: 'mapbox://styles/mapbox/streets-v11',
+        center:[-47.074897, -22.827748],
+        zoom:15,
+        });
+    </script>
+    <footer class="p-5 bg-info bg-gradient text-white text-center position-relative">
+        <div class="container" style="text-align: center">
+            <a href="https://www.linkedin.com/in/gabrielpereira09/" style="padding: 5%;font-size: 2rem;" target="_blank"><i class="bi bi-linkedin text-dark"></i></a>
+            <a href="https://github.com/Gabrielcesar9" style="padding: 5%;font-size: 2rem;"><i class="bi bi-github text-dark"></i></a>
+        </div>
+    </footer>
+</body>
+</html>
